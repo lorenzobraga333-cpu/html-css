@@ -53,22 +53,42 @@ header > p > a:hover {
     text-decoration: underline;
 }
 
+main > article {
+    font: 3.5vw var(--fonte3);
+    line-height: 2em;
+    padding: 7vh 0vh;
+}
+
+main > article > p {
+    padding-left: 30px;
+    padding-bottom: 3em;
+}
+
 .estrofe-parallax {
     background-color: var(--cor2);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px #00000080;
+    padding: 10vh 30px;
+    margin-bottom: 5vh;
 }
 
 .estrofe-parallax > p {
     display: inline-block;
     padding: 5px;
-    background-color: #00000027;
+    background-color: #00000083;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px black;
 }
 
-article > div, article > p{
-    font: 3.5vw var(--fonte3);
-    line-height: 2em;
-    padding-top: 10vh;
-    padding-left: 30px;
-    padding-bottom: 10vh;
+#img01 {
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+}
+
+#img02 {
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;
 }
 
 footer {

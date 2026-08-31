@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de mesclagem de células 2</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            margin: auto;
+        }
+
+        caption {
+            border: 1px solid black;
+            background-color: aliceblue;
+            font: 1.2em Arial;
+            padding: 20px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: lavender;
+        }
+
+        .linha {
+            background-color: yellow;
+        }
+
+        .coluna {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+        <table>
+            <caption>Desafio de mesclagem de células 2</caption>
+            <tbody>
+                <tr>
+                    <td colspan="4" class="coluna">A</td>
+                    <td rowspan="4" class="linha">B</td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="linha">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>K</td>
+                    <td>L</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="coluna">N</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

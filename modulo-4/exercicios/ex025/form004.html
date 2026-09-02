@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: khaki;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        fieldset {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required minlength="4" maxlength="20">
+            </p>
+            <p>
+                <label for="itel">Celular: </label>
+                <input type="tel" name="tel" id="itel" required placeholder="Digite seu número" pattern="^\d{11,12}$" autocomplete="tel">
+            </p>
+            <p>
+                <label for="imail">E-mail: </label>
+                <input type="email" name="mail" id="imail" required placeholder="Digite seu E-mail" minlength="15" maxlength="35" autocomplete="email">
+            </p>
+            <p>
+                <input type="submit" value="Enviar >">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

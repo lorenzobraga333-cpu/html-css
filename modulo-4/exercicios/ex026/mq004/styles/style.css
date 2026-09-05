@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* Versão Mobile First */
+* {
+    font: 1em Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+}
+
+
+body {
+    background: black url(../images/back-phone.jpg) no-repeat center center / cover fixed;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.822);
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.514);
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#phone {display: block;}
+#tablet {display: none;}
+#print {display: none;}
+#pc {display: none;}
+#tv {display: none;}
+
+/* Versão Tablets */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+/* Versão Desktops */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+/* Versão TV / Telas Grandes */
+@media screen and (min-width: 1920px) {
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+
+    main{
+        width: 600px;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
+
+/* Versão Impressora */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw; 
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Esta impressão foi feita através do site de Lorenzo Castagnetti';
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+}

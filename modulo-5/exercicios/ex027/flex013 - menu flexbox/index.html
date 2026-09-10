@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexbox</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="menulist" class="material-icons" onclick="clickMenu()">vertical_split</span>
+        <nav id="navburger">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Teste de Flexbox - Título</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, rerum sit veniam sed laudantium maxime quos repellat tenetur! Illo asperiores reprehenderit laudantium odio sequi. Animi nesciunt pariatur illum iusto quas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quia ut aspernatur, eius dignissimos vero dolorem. Non illum ut enim, odit quod ab quibusdam nihil culpa iusto nesciunt sed voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit porro ad dolorum non animi sapiente accusantium quaerat quisquam voluptates quod cum, reiciendis voluptatum, voluptate, modi quis vero necessitatibus magnam ipsa!</p>
+        </section>
+    </main>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 620) {
+                navburger.style.display = 'block'
+            } else {
+                navburger.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (navburger.style.display == 'block') {
+                navburger.style.display = 'none'
+            } else {
+                navburger.style.display = 'block'
+            }
+        }
+
+    </script>
+</body>
+</html>

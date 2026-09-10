@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento Transversal</title>
+    <title>Flex-Grow e Flex-Shrink</title>
     <style>
         div.container {
             display: flex;
-            flex-flow: row wrap;
-            align-content: space-around;
-            height: 400px;
+            flex-flow: row nowrap;
             background-color: lightskyblue;
         }
 
         div.item {
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
             text-align: center;
-            padding: 40px;
             background-color: lightcyan;
             border: 1px solid black;
         }
@@ -26,15 +26,6 @@
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
-        <div class="item">J</div>
-        <div class="item">K</div>
-        <div class="item">L</div>
     </div>
 </body>
 </html>

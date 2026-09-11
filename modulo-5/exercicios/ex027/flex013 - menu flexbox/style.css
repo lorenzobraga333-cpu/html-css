@@ -60,7 +60,8 @@ nav > a:hover {
 
 main {
     background-color: white;
-    margin: 20px;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 10px;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.295);
     border-radius: 8px;
@@ -91,6 +92,10 @@ main > section > p {
     nav > a {
         display: block;
         width: 90vw;
+    }
+
+    main {
+        margin: 15px;
     }
 
     #menulist {

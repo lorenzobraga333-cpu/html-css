@@ -1,0 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+    gap: 5px;
+}
+
+/* END com valores NEGATIVOS */
+.caixa1 {
+    background-color: lightblue;
+    grid-area: 1 / 1 / -4 / -1;
+}
+
+/* END com valores POSITIVOS */
+.caixa2 {
+    background-color: lightgreen;
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+/* END com SPAN */
+.caixa3 {
+    background-color: lightcoral;
+    grid-area: 2 / 3 / span 2 / span 2;
+}
